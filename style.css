@@ -271,31 +271,55 @@ footer .footer-social a:hover{
 
 /* RESPONSIVE */
 @media(max-width:768px){
+
+    /* Navbar layout fix */
+    .navbar{
+        padding: 15px 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Toggle LEFT me */
     .menu-toggle{
         display: block;
+        order: 2;
     }
+
+    /* Logo RIGHT me */
+    .logo{
+        order: 1;
+        margin-right: auto;
+    }
+
+    /* Nav dropdown */
     .navbar ul{
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 70px;
-        right: 0;
+        top: 60px;
+        right: 20px;
         background: #111827;
         width: 200px;
         padding: 20px;
         z-index: 10001;
         border-radius: 10px;
     }
+
     .navbar nav.active ul{
         display: flex;
     }
+
+    /* Responsive content */
     .hero h1{
         font-size: 32px;
     }
+
     .about, .portfolio, .contact{
         padding: 60px 20px;
     }
+
     .project-card{
         width: 100%;
     }
 }
+
